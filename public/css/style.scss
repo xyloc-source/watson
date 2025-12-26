@@ -6,6 +6,8 @@ $primary-1: #0857c3;
 $primary-2: #0468f1;
 $primary-3: rgba(8, 87, 195, 0.9);
 $primary-4: rgba(8, 87, 195, 0.6);
+$secondary-1: #31DDDB;
+$secondary-2: #1DC0BE;
 $transition: 0.3s;
 $font-sans: "noto sans TC";
 $font-roboto: "Roboto", sans-serif;
@@ -248,7 +250,7 @@ ul {
             content: "";
             width: 100%;
             height: 100%;
-            background-color: $primary-1;
+            background-color: $secondary-1;
             top: 0;
             left: 0;
             z-index: -1;
@@ -291,20 +293,30 @@ ul {
 }
 
 .expertise {
-    min-height: 472px;
+    // min-height: 472px;
     padding: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
+    background-color: #F5FFFF;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        img {
+            width: 120px;
+        }
+    }
     .container {
         padding: 0;
     }
     .title {
         font-size: 36px;
         margin-bottom: 24px;
-        color: $primary-1;
+        // color: $primary-1;
         font-weight: 700;
         font-weight: 500;
     }
@@ -362,7 +374,7 @@ ul {
             content: "";
             width: 100%;
             height: 100%;
-            background-color: $primary-1;
+            background-color: $secondary-1;
             transform: skewX(-20deg);
             z-index: -1;
             top: 0;
@@ -471,7 +483,6 @@ ul {
             &.vision, &.mission {
                 text-transform: uppercase;
                 font-size: 90px;
-                color: $primary-1;
             }
             &.and {
                 font-size: 80px;
@@ -479,6 +490,10 @@ ul {
             }
             &.vision {
                 transform: translateX(-208px);
+                color: $primary-1;
+            }
+            &.mission {
+                color: $secondary-2;
             }
         }
     }
@@ -593,7 +608,7 @@ ul {
             }
                 &-history {
                     &__year {
-                        color: $primary-1 !important;
+                        color:#8d8d8d !important;
                     }
                     &__content {
                         color: $text !important;
@@ -658,7 +673,7 @@ ul {
     left: 20px;
     transform: translateY(-50%);
     background-color: $white;
-    border: 4px solid $primary-1;
+    border: 4px solid $secondary-2;
     z-index: 5;
     &__time,
     &__title {
@@ -692,7 +707,8 @@ ul {
       }
     }
     &__year {
-      color: $primary-1;
+      color: #8d8d8d;
+      font-weight: 700;
       width: 48px;
     }
     &__content {
@@ -776,6 +792,7 @@ ul {
         justify-content: center;
         padding: 20px 80px;
         background-color: $primary-3;
+        // background-color: rgba(11, 174, 171, 0.9);
         gap: 16px;
         height: 100%;
         max-width: 500px;

@@ -284,7 +284,7 @@ ul {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #0857c3;
+  background-color: #31DDDB;
   top: 0;
   left: 0;
   z-index: -1;
@@ -329,22 +329,25 @@ ul {
 }
 
 .expertise {
-  min-height: 472px;
   padding: 48px;
+  background-color: #F5FFFF;
+}
+
+.expertise__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  gap: 60px;
+}
+
+.expertise__inner img {
+  width: 120px;
 }
 
 .expertise .container {
@@ -354,7 +357,6 @@ ul {
 .expertise .title {
   font-size: 36px;
   margin-bottom: 24px;
-  color: #0857c3;
   font-weight: 700;
   font-weight: 500;
 }
@@ -430,7 +432,7 @@ ul {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #0857c3;
+  background-color: #31DDDB;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
   z-index: -1;
@@ -572,7 +574,6 @@ ul {
 .bg-text__title span.vision, .bg-text__title span.mission {
   text-transform: uppercase;
   font-size: 90px;
-  color: #0857c3;
 }
 
 .bg-text__title span.and {
@@ -584,6 +585,11 @@ ul {
 .bg-text__title span.vision {
   -webkit-transform: translateX(-208px);
           transform: translateX(-208px);
+  color: #0857c3;
+}
+
+.bg-text__title span.mission {
+  color: #1DC0BE;
 }
 
 .bg-text__content {
@@ -720,7 +726,7 @@ ul {
 }
 
 .slider-text__item.text-right .slider-text-history__year {
-  color: #0857c3 !important;
+  color: #8d8d8d !important;
 }
 
 .slider-text__item.text-right .slider-text-history__content {
@@ -798,7 +804,7 @@ ul {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #fff;
-  border: 4px solid #0857c3;
+  border: 4px solid #1DC0BE;
   z-index: 5;
 }
 
@@ -839,7 +845,8 @@ ul {
 }
 
 .slider-text-history__year {
-  color: #0857c3;
+  color: #8d8d8d;
+  font-weight: 700;
   width: 48px;
 }
 

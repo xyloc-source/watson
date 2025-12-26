@@ -25,6 +25,16 @@ function handleScrollResize() {
 window.addEventListener("scroll", handleScrollResize);
 window.addEventListener("resize", handleScrollResize);
 
+document.addEventListener("click", function (event) {
+  const containers = document.querySelectorAll(".header__lang");
+
+  containers.forEach(function (container) {
+    if (!container.contains(event.target)) {
+      container.classList.remove("active");
+    }
+  });
+});
+
 var swiper1 = new Swiper("#swiper-1", {
   slidesPerView: 1,
   pagination: {
