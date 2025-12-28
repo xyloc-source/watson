@@ -10,6 +10,15 @@ document.querySelectorAll(".header-lang-active").forEach(function (element) {
   });
 });
 
+document.querySelectorAll(".header-lang-list a").forEach((item) => {
+  item.addEventListener("click", () => {
+    const langWrap = document.querySelector(".header__lang");
+    if (langWrap) {
+      langWrap.classList.remove("active");
+    }
+  });
+});
+
 function handleScrollResize() {
   if (window.scrollY > 0) {
     document.querySelectorAll(".header").forEach(function (el) {
@@ -57,7 +66,7 @@ var swiper2 = new Swiper("#swiper-2", {
   },
 });
 
-var swiper2 = new Swiper("#swiper-3", {
+var swiper3 = new Swiper("#swiper-3", {
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
@@ -68,7 +77,7 @@ var swiper2 = new Swiper("#swiper-3", {
   },
 });
 
-var swiper2 = new Swiper("#swiper-4", {
+var swiper4 = new Swiper("#swiper-4", {
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
@@ -79,7 +88,7 @@ var swiper2 = new Swiper("#swiper-4", {
   },
 });
 
-var swiper2 = new Swiper("#swiper-5", {
+var swiper5 = new Swiper("#swiper-5", {
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",

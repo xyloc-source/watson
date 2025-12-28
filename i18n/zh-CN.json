@@ -1,0 +1,88 @@
+{
+  "lang": {
+    "currentLabel": "简体中文",
+    "zhTW": "繁體中文",
+    "zhCN": "简体中文",
+    "en": "English"
+  },
+  "banner": {
+    "title": "Always go the extra mile",
+    "description": "我们热衷于推广创新技术和产品<br/>协助来自各国的合作伙伴经营大中华市场"
+  },
+  "expertise": {
+    "title": "我們的行業與專長",
+    "description": "深耕半導體、資訊科技與行動裝置產業，提供高科技產品的事業開發與專業銷售服務。"
+  },
+    "who": {
+        "description": "我们致力于推动创新技术与产品，协助全球合作伙伴开拓大中华市场。凭借专业顾问经验与深厚的本地资源，我们协助合作伙伴精准定位市场、强化竞争优势，共同实现业务增长与长期愿景。我们坚持以结果为导向，持续投入与优化，确保合作伙伴与客户在激烈市场中稳健迈向成功。正因他们的信任与成就，我们建立了长期而稳固的合作关系。",
+        "title": "我们的理念",
+        "principle": "原则",
+        "principle1": "真诚",
+        "principle2": "责任",
+        "principle3": "勤勉",
+        "action": "执行",
+        "action1": "构建互信",
+        "action2": "服务入微",
+        "action3": "致力达标"
+    },
+    "vision": {
+        "title": "愿景",
+        "list": [
+            "使代理产品成为市场前三的领导品牌。",
+            "专注于关键供应链与高价值利基市场的深耕布局。"
+        ]
+    },
+    "mission": {
+        "title": "使命",
+        "list": [
+            "为客户创造价值，使原厂品牌更加闪耀。"
+        ]
+    },
+    "history2025": {
+        "title": "源自瑞典的专业静态代码分析工具",
+        "item1": "Cppcheck Premium 是一款由瑞典公司 Cppcheck Solutions AB 开发的静态代码分析工具，专为 C/C++ 语言设计。",
+        "item2": "<strong>高阶检测，认证合规：</strong>旨在提供更高级的检查，以支持开发认证并符合行业标准规范。",
+        "item3": "<strong>深受开发者信赖：</strong>Cppcheck 在全球 C/C++ 开发者社区中享有极高声誉，其开源版本因高性能和精准的错误检测能力而备受推崇，付费的 Premium 版本则进一步提供企业级功能与专业支持。"
+    },
+    "history2014": {
+        "title": "指纹识别算法的先驱",
+        "item1": "已成为 Samsung、Xiaomi 等智能设备领导品牌的核心技术选择，小米高端智能门锁亦采用该算法。",
+        "item2": "全球 COVID-19 疫情肆虐，尽管手机出货量大幅下滑，业绩仍保持稳定增长。",
+        "item3": "成功打入韩国手机品牌供应链，成为安卓系统手机光学指纹识别算法的全球市场领导者。",
+        "item4": "光学指纹识别算法在大中华区市场推广，市场占有率跃升至第二名。"
+    },
+    "history2012": {
+        "title": "LED 灯具自有品牌",
+        "item1": "自有品牌 Pavoradi 灯具与灯光设计成功进入法国精品 Louis Vuitton（LV）集团中国市场，完成上海嘉里中心 LV 旗舰店灯光设计项目。"
+    },
+    "history2007": {
+        "title": "全球第一家 GSM 手机 CMOS 功率放大器",
+        "item1": "Axiom 销量快速增长，成功取得白牌手机市场功率放大器 20% 的市场份额，随后引发竞争对手的并购行动。",
+        "item2": "推出首款成功打入中国 GSM 手机市场的 CMOS 功率放大器，开启技术应用新里程碑，替代 GaAs 功率放大器。"
+    },
+    "history20072": {
+        "title": "高功率 LED 微机电系统（MEMS）封装技术的全球先驱",
+        "item1": "成功协助 Hymite 以高价将其全部专利出售给全球知名半导体制造商，帮助原厂完成战略性转型。"
+    },
+    "history1999": {
+        "title": "锂电池",
+        "item1": "在全球金融危机期间，持续保持稳定的出货表现，不仅协助 SDI 稳健渡过市场低潮，更奠定其全球市场领导地位。",
+        "item2": "在金融海啸前精准预判市场走势，协助 SDI 通过预售方式提前锁定 2009 年大量客户订单，创造创纪录的营业额，达到 4.6 亿美元。",
+        "item3": "创下销售新纪录，负责销售<strong> Samsung SDI 超过 70% 的产量，奠定长期稳定的合作基础。</strong>",
+        "item4": "<strong>成功销售 Samsung SDI 生产的首颗锂电池</strong>，开启双方合作新篇章。"
+    },
+    "contact": {
+        "title": "联系我们",
+        "description": "如需咨询或了解更多信息，欢迎与我们联系。",
+        "form": {
+            "name": "姓名",
+            "phone": "电话",
+            "email": "电子邮箱",
+            "message": "留言"
+        },
+        "btn": "提交",
+        "phone": "电话: <a href='tel:+886-2-8227-8050'>+886-2-8227-8050</a>",
+        "email": "Email邮箱:<a href='mailto:service@watsonbell.com'>service@watsonbell.com</a>",
+        "address": "地址:<a href='https://maps.app.goo.gl/eHEc93JHjsmm1scBA' target='_blank'>新北市中和区连城路 268 号 13 楼之 4</a>"
+    }
+}

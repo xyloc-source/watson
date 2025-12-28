@@ -6,8 +6,10 @@ $primary-1: #0857c3;
 $primary-2: #0468f1;
 $primary-3: rgba(8, 87, 195, 0.9);
 $primary-4: rgba(8, 87, 195, 0.6);
-$secondary-1: #31DDDB;
-$secondary-2: #1DC0BE;
+// $secondary-1: #9bcf00;
+// $secondary-2: #7aa300;
+$secondary-1: #ffb300;
+$secondary-2: #f1a900;
 $transition: 0.3s;
 $font-sans: "noto sans TC";
 $font-roboto: "Roboto", sans-serif;
@@ -136,6 +138,10 @@ ul {
                     align-items: center;
                     justify-content: center;
                     height: 44px;
+                    &.active {
+                        background-color: $secondary-2;
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -300,14 +306,18 @@ ul {
     // align-items: center;
     // justify-content: center;
     // text-align: center;
-    background-color: #F5FFFF;
+    background-color: #fffdf5;
     &__inner {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 60px;
-        img {
+        svg {
             width: 120px;
+            height: 120px;
+            path {
+                fill: $secondary-2;
+            }
         }
     }
     .container {

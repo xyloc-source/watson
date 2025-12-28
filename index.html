@@ -33,32 +33,69 @@
           /></a>
         </div>
         <div class="d-flex align-items-center gap-3 h-100">
-          <img class="header__iso" src="./public/img/ISO.png" alt="">
-        <div class="header__lang">
-          <button class="header-lang-active">
-            <i class="header-lang-active_globe bi bi-globe2"></i>
-            <p>繁體中文</p>
-            <i class="header-lang-active_arrow bi bi-chevron-down"></i>
-          </button>
-          <ul class="header-lang-list">
-            <li>
-              <a href="">简<span>体</span>中<span>文</span></a>
-            </li>
-            <li>
-              <a href="">En<span>glish</span></a>
-            </li>
-          </ul>
-        </div>
+          <img class="header__iso" src="./public/img/ISO.png" alt="" />
+          <div class="header__lang">
+            <button class="header-lang-active">
+              <i class="header-lang-active_globe bi bi-globe2"></i>
+              <p data-i18n="lang.currentLabel">繁體中文</p>
+              <i class="header-lang-active_arrow bi bi-chevron-down"></i>
+            </button>
+            <ul class="header-lang-list">
+              <li>
+                <a
+                  href="#"
+                  class="active"
+                  data-lang="zh-TW"
+                  data-i18n="lang.zhTW"
+                  >繁<span>體</span>中<span>文</span></a
+                >
+              </li>
+              <li>
+                <a href="#" data-lang="zh-CN" data-i18n="lang.zhCN"
+                  >简<span>体</span>中<span>文</span></a
+                >
+              </li>
+              <li>
+                <a href="#" data-lang="en" data-i18n="lang.en"
+                  >En<span>glish</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main class="main">
       <div class="banner">
-        <img class="banner__pic" src="./public/img/kv_bg.jpg" alt="" data-aos="fade" data-aos-duration="1000" />
+        <img
+          class="banner__pic"
+          src="./public/img/kv_bg.jpg"
+          alt=""
+          data-aos="fade"
+          data-aos-duration="1000"
+        />
         <div class="banner__text">
-          <img class="banner__logo" src="./public/img/big_logo.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
-          <h1 class="banner__title" data-aos="fade-up" data-aos-duration="1000">Always go the extra mile</h1>
-          <p class="banner__description" data-aos="fade-up" data-aos-duration="1000">
+          <img
+            class="banner__logo"
+            src="./public/img/big_logo.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <h1
+            class="banner__title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-i18n="banner.title"
+          >
+            Always go the extra mile
+          </h1>
+          <p
+            class="banner__description"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-i18n-html="banner.description"
+          >
             我們熱衷於推廣創新技術和產品<br />
             協助來自各國的合作夥伴經營大中華市場
           </p>
@@ -68,10 +105,61 @@
       <div class="expertise">
         <div class="container">
           <div class="expertise__inner">
-            <img src="./public/img/tech.svg" alt="">
+            <svg
+              width="184"
+              height="184"
+              viewBox="0 0 184 184"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M172.5 66.125H120.75C115.995 66.125 112.125 69.9947 112.125 74.75V109.25C112.125 114.005 115.995 117.875 120.75 117.875H135.125V123.625H129.375V129.375H143.75V143.75C143.75 145.334 142.459 146.625 140.875 146.625H123.49C122.302 133.662 113.163 122.636 100.625 119.085V115C100.625 110.245 96.7552 106.375 92 106.375C87.2448 106.375 83.375 110.245 83.375 115V119.085C70.8371 122.636 61.6975 133.664 60.5101 146.625H40.25C38.6659 146.625 37.375 145.334 37.375 143.75V140.728C53.4692 139.271 66.125 125.718 66.125 109.25C66.125 91.8131 51.9369 77.625 34.5 77.625C17.0631 77.625 2.875 91.8131 2.875 109.25C2.875 125.718 15.5308 139.271 31.625 140.728V143.75C31.625 148.505 35.4948 152.375 40.25 152.375H60.5216C61.9793 168.469 75.532 181.125 92 181.125C108.468 181.125 122.021 168.469 123.478 152.375H140.875C145.63 152.375 149.5 148.505 149.5 143.75V129.375H163.875V123.625H158.125V117.875H172.5C177.255 117.875 181.125 114.005 181.125 109.25V74.75C181.125 69.9947 177.255 66.125 172.5 66.125ZM8.625 109.25C8.625 94.9843 20.2343 83.375 34.5 83.375C48.7658 83.375 60.375 94.9843 60.375 109.25C60.375 123.516 48.7658 135.125 34.5 135.125C20.2343 135.125 8.625 123.516 8.625 109.25ZM92 152.375C96.7552 152.375 100.625 148.505 100.625 143.75V138.029C104.173 140.697 106.375 144.917 106.375 149.5C106.375 157.426 99.9264 163.875 92 163.875C84.0736 163.875 77.625 157.426 77.625 149.5C77.625 144.917 79.8272 140.697 83.375 138.029V143.75C83.375 148.505 87.2448 152.375 92 152.375ZM89.125 115C89.125 113.416 90.4159 112.125 92 112.125C93.5841 112.125 94.875 113.416 94.875 115V143.75C94.875 145.334 93.5841 146.625 92 146.625C90.4159 146.625 89.125 145.334 89.125 143.75V115ZM92 175.375C77.7343 175.375 66.125 163.766 66.125 149.5C66.125 138.457 73.2032 128.728 83.375 125.126V131.396C76.4376 134.705 71.875 141.709 71.875 149.503C71.875 160.6 80.9025 169.628 92 169.628C103.097 169.628 112.125 160.6 112.125 149.503C112.125 141.712 107.562 134.705 100.625 131.396V125.126C110.797 128.728 117.875 138.457 117.875 149.5C117.875 163.766 106.266 175.375 92 175.375ZM120.75 71.875H172.5C174.084 71.875 175.375 73.1659 175.375 74.75V100.625H117.875V74.75C117.875 73.1659 119.166 71.875 120.75 71.875ZM152.375 123.625H140.875V117.875H152.375V123.625ZM172.5 112.125H120.75C119.166 112.125 117.875 110.834 117.875 109.25V106.375H175.375V109.25C175.375 110.834 174.084 112.125 172.5 112.125Z"
+                fill="#1DC0BE"
+              />
+              <path
+                d="M11.5 71.875H40.25C45.0052 71.875 48.875 68.0052 48.875 63.25V40.25H77.625C79.2091 40.25 80.5 41.5409 80.5 43.125V80.5H86.25V43.125C86.25 38.3698 82.3802 34.5 77.625 34.5H48.875V11.5C48.875 6.74475 45.0052 2.875 40.25 2.875H11.5C6.74475 2.875 2.875 6.74475 2.875 11.5V63.25C2.875 68.0052 6.74475 71.875 11.5 71.875ZM40.25 66.125H11.5C9.91587 66.125 8.625 64.8341 8.625 63.25V60.375H43.125V63.25C43.125 64.8341 41.8341 66.125 40.25 66.125ZM8.625 54.625V20.125H43.125V54.625H8.625ZM11.5 8.625H40.25C41.8341 8.625 43.125 9.91587 43.125 11.5V14.375H8.625V11.5C8.625 9.91587 9.91587 8.625 11.5 8.625Z"
+                fill="#1DC0BE"
+              />
+              <path
+                d="M43.125 120.75C43.125 115.995 39.2552 112.125 34.5 112.125C29.7447 112.125 25.875 115.995 25.875 120.75C25.875 125.505 29.7447 129.375 34.5 129.375C39.2552 129.375 43.125 125.505 43.125 120.75ZM31.625 120.75C31.625 119.166 32.9159 117.875 34.5 117.875C36.0841 117.875 37.375 119.166 37.375 120.75C37.375 122.334 36.0841 123.625 34.5 123.625C32.9159 123.625 31.625 122.334 31.625 120.75Z"
+                fill="#1DC0BE"
+              />
+              <path
+                d="M44.666 110.584L48.7313 106.519C40.8854 98.6729 28.1175 98.6729 20.2716 106.519L24.3369 110.584C29.9403 104.981 39.0598 104.981 44.666 110.584Z"
+                fill="#1DC0BE"
+              />
+              <path
+                d="M52.7965 102.454L56.8617 98.3883C44.5309 86.0574 24.4663 86.0574 12.1354 98.3883L16.2006 102.454C26.2948 92.3651 42.7052 92.3651 52.7965 102.454Z"
+                fill="#1DC0BE"
+              />
+              <path d="M80.5 97.75H86.25V103.5H80.5V97.75Z" fill="#1DC0BE" />
+              <path d="M80.5 86.25H86.25V92H80.5V86.25Z" fill="#1DC0BE" />
+              <path d="M97.75 97.75H103.5V103.5H97.75V97.75Z" fill="#1DC0BE" />
+              <path d="M97.75 86.25H103.5V92H97.75V86.25Z" fill="#1DC0BE" />
+              <path
+                d="M103.5 37.375C103.5 35.7909 104.791 34.5 106.375 34.5H123.772C125.218 49.0073 137.494 60.375 152.375 60.375C168.228 60.375 181.125 47.4777 181.125 31.625C181.125 15.7723 168.228 2.875 152.375 2.875C137.491 2.875 125.218 14.2428 123.772 28.75H106.375C101.62 28.75 97.75 32.6197 97.75 37.375V80.5H103.5V37.375ZM152.375 8.625C153.275 8.625 155.201 11.5661 156.578 17.25H148.172C149.549 11.5661 151.475 8.625 152.375 8.625ZM157.605 23C157.826 24.7652 157.99 26.6714 158.067 28.75H146.677C146.754 26.6714 146.921 24.7652 147.14 23H157.605ZM152.375 54.625C151.475 54.625 149.549 51.6839 148.172 46H156.578C155.201 51.6839 153.275 54.625 152.375 54.625ZM147.145 40.25C146.924 38.4847 146.76 36.5786 146.683 34.5H158.073C157.996 36.5786 157.829 38.4847 157.61 40.25H147.145ZM163.82 34.5H175.177C174.924 36.5067 174.421 38.4359 173.682 40.25H163.392C163.605 38.3611 163.751 36.4349 163.82 34.5ZM175.177 28.75H163.82C163.751 26.8151 163.605 24.8889 163.392 23H173.682C174.418 24.8141 174.924 26.7432 175.177 28.75ZM140.93 28.75H129.573C129.826 26.7432 130.33 24.8141 131.068 23H141.358C141.145 24.8889 140.999 26.8151 140.93 28.75ZM140.93 34.5C140.999 36.4349 141.145 38.3611 141.358 40.25H131.068C130.332 38.4359 129.826 36.5067 129.573 34.5H140.93ZM134.449 46H142.267C142.819 48.6421 143.532 51.0916 144.429 53.1817C140.481 51.7212 137.04 49.2229 134.449 46ZM160.321 53.1817C161.218 51.0916 161.931 48.6421 162.483 46H170.301C167.71 49.2229 164.269 51.7212 160.321 53.1817ZM170.301 17.25H162.483C161.931 14.6079 161.218 12.1584 160.321 10.0683C164.269 11.5288 167.71 14.0271 170.301 17.25ZM144.429 10.0683C143.532 12.1584 142.821 14.6079 142.267 17.25H134.449C137.04 14.0271 140.481 11.5288 144.429 10.0683Z"
+                fill="#1DC0BE"
+              />
+            </svg>
+
             <div class="expertise__text">
-              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">我們的行業與專長</h2>
-              <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">深耕半導體、資訊科技與行動裝置產業，提供高科技產品的事業開發與專業銷售服務。</p>
+              <h2
+                class="title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-i18n="expertise.title"
+              >
+                我們的行業與專長
+              </h2>
+              <p
+                class="text"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-i18n="expertise.description"
+              >
+                深耕半導體、資訊科技與行動裝置產業，提供高科技產品的事業開發與專業銷售服務。
+              </p>
             </div>
           </div>
         </div>
@@ -80,43 +168,109 @@
       <div class="icons-text">
         <div class="container">
           <div class="icons-text__inner">
-            <h2 class="icons-text__title" data-aos="fade-up" data-aos-duration="1000">Who we are</h2>
-            <p class="icons-text__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2
+              class="icons-text__title"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Who we are
+            </h2>
+            <p
+              class="icons-text__text"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-i18n-html="who.description"
+            >
               我們致力於推動創新技術與產品，協助全球合作夥伴開拓大中華市場。憑藉專業顧問經驗與深厚的在地資源，我們協助合作夥伴<strong>精準定位市場、強化競爭優勢，共同實現業務成長與長期願景。</strong>我們堅持以結果為導向，持續投入與優化，確保合作夥伴與客戶在激烈市場中穩健邁向成功。正因他們的信任與成就，我們建立了長久而穩固的合作關係。
             </p>
-            <h3 class="icons-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">我們的理念</h3>
+            <h3
+              class="icons-text__subtitle"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-i18n="who.title"
+            >
+              我們的理念
+            </h3>
             <div class="icons-text-content">
               <div class="icons-text-inner">
-                <h3 class="icons-text-inner__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">原則</h3>
+                <h3
+                  class="icons-text-inner__title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                  data-i18n="who.principle"
+                >
+                  原則
+                </h3>
                 <div class="icons-text-wrapper">
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="350"
+                  >
                     <img src="./public/img/icon_team.svg" alt="" />
-                    <p>真誠</p>
+                    <p data-i18n="who.principle1">真誠</p>
                   </div>
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
                     <img src="./public/img/icon_responsible.svg" alt="" />
-                    <p>責任</p>
+                    <p data-i18n="who.principle2">責任</p>
                   </div>
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="450"
+                  >
                     <img src="./public/img/icon_diligence.svg" alt="" />
-                    <p>勤勉</p>
+                    <p data-i18n="who.principle3">勤勉</p>
                   </div>
                 </div>
               </div>
               <div class="icons-text-inner">
-                <h3 class="icons-text-inner__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">執行</h3>
+                <h3
+                  class="icons-text-inner__title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                  data-i18n="who.action"
+                >
+                  執行
+                </h3>
                 <div class="icons-text-wrapper">
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="350"
+                  >
                     <img src="./public/img/icon_buildtrust.svg" alt="" />
-                    <p>建構互信</p>
+                    <p data-i18n="who.action1">建構互信</p>
                   </div>
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="450"
+                  >
                     <img src="./public/img/icon_attentive_service.svg" alt="" />
-                    <p>服務入微</p>
+                    <p data-i18n="who.action2">服務入微</p>
                   </div>
-                  <div class="icons-text-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                  <div
+                    class="icons-text-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
                     <img src="./public/img/icon_reaching_target.svg" alt="" />
-                    <p>致力達標</p>
+                    <p data-i18n="who.action3">致力達標</p>
                   </div>
                 </div>
               </div>
@@ -128,22 +282,54 @@
       <div class="bg-text">
         <div class="container">
           <div class="bg-text__content">
-            <h2 class="bg-text__title" data-aos="fade-up" data-aos-duration="1000">
+            <h2
+              class="bg-text__title"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <span class="vision">Vision</span>
               <span class="and">and</span>
               <span class="mission">Mission</span>
             </h2>
             <div class="bg-text__item">
-              <h3 class="bg-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">願景</h3>
-              <ul class="bg-text__list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <li>使代理產品成為市場前三的領導品牌。</li>
-                <li>專注於關鍵供應鏈與高價值利基市場的深耕布局。</li>
+              <h3
+                class="bg-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-i18n="vision.title"
+              >
+                願景
+              </h3>
+              <ul
+                class="bg-text__list"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-list="vision.list"
+              >
+                <!-- <li>使代理產品成為市場前三的領導品牌。</li>
+                <li>專注於關鍵供應鏈與高價值利基市場的深耕布局。</li> -->
               </ul>
             </div>
             <div class="bg-text__item">
-              <h3 class="bg-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">使命</h3>
-              <ul class="bg-text__list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                <li>為客戶創造價值，使原廠品牌更閃耀。</li>
+              <h3
+                class="bg-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-i18n="mission.title"
+              >
+                使命
+              </h3>
+              <ul
+                class="bg-text__list"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                data-i18n-list="mission.list"
+              >
+                <!-- <li>為客戶創造價值，使原廠品牌更閃耀。</li> -->
               </ul>
             </div>
           </div>
@@ -176,31 +362,69 @@
               </div>
             </div>
             <div class="slider-text-text">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000">2025 ~ Present</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <a href="https://www.cppcheck.com/" target="_blank">CPPCheck Solutions AB</a> (Sweden)
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                2025 ~ Present
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <a href="https://www.cppcheck.com/" target="_blank"
+                  >CPPCheck Solutions AB</a
+                >
+                (Sweden)
               </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">源自瑞典的專業靜態程式碼分析工具</h4>
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n="history2025.title"
+              >
+                源自瑞典的專業靜態程式碼分析工具
+              </h4>
               <ul class="slider-text-history no-year">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                  <span class="slider-text-history__content"
-                    >
-                  Cppcheck Premium 是一款由瑞典公司 Cppcheck Solutions AB 開發的靜態程式碼分析工具，專為 C/C++ 語言設計。</span>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <span class="slider-text-history__content" data-i18n-html="history2025.item1">
+                    Cppcheck Premium 是一款由瑞典公司 Cppcheck Solutions AB
+                    開發的靜態程式碼分析工具，專為 C/C++ 語言設計。</span
+                  >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                  <span class="slider-text-history__content"
-                    >
-                  <strong>高階檢測，認證合規：</strong>旨在提供更進階的檢查 ，以利開發認證與符合產業標準規範。</span>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <span class="slider-text-history__content" data-i18n-html="history2025.item2">
+                    <strong>高階檢測，認證合規：</strong>旨在提供更進階的檢查
+                    ，以利開發認證與符合產業標準規範。</span
+                  >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                  <span class="slider-text-history__content"
-                    >
-                  <strong>深獲開發者信賴：</strong>Cppcheck 在全球 C/C++ 開發社群中享有高度聲譽，其開源版本因高效能和精準的錯誤偵測能力而備受推崇，付費的 Premium 版本則進一步提供企業級功能與專業支援。</span>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
+                  <span class="slider-text-history__content" data-i18n-html="history2025.item3">
+                    <strong>深獲開發者信賴：</strong>Cppcheck 在全球 C/C++
+                    開發社群中享有高度聲譽，其開源版本因高效能和精準的錯誤偵測能力而備受推崇，付費的
+                    Premium 版本則進一步提供企業級功能與專業支援。</span
+                  >
                 </li>
               </ul>
             </div>
           </div>
-          
+
           <div class="slider-text__item">
             <div class="slider-text__pic">
               <div class="swiper-container slider-text__swiper" id="swiper-1">
@@ -225,33 +449,73 @@
               </div>
             </div>
             <div class="slider-text-text">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000">2014~ Present</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <a href="https://www.precisebiometrics.com/" target="_blank">Precise Biometrics AB</a> (Sweden)
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                2014~ Present
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <a href="https://www.precisebiometrics.com/" target="_blank"
+                  >Precise Biometrics AB</a
+                >
+                (Sweden)
               </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">指紋辨識演算法的先鋒</h4>
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-html="history2014.title"
+              >
+                指紋辨識演算法的先鋒
+              </h4>
               <ul class="slider-text-history">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <span class="slider-text-history__year">2025</span>
-                  <span class="slider-text-history__content"
-                    >已成為 Samsung、Xiaomi 等智慧裝置領導品牌的核心技術選擇，小米高端智能門鎖亦使用該演算法。</span
+                  <span class="slider-text-history__content" data-i18n-html="history2014.item1"
+                    >已成為 Samsung、Xiaomi
+                    等智慧裝置領導品牌的核心技術選擇，小米高端智能門鎖亦使用該演算法。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <span class="slider-text-history__year">2020</span>
-                  <span class="slider-text-history__content"
-                    >全球 COVID-19 疫情肆虐，儘管手機出貨量大幅下滑，業績仍維持穩定成長。</span
+                  <span class="slider-text-history__content" data-i18n-html="history2014.item2"
+                    >全球 COVID-19
+                    疫情肆虐，儘管手機出貨量大幅下滑，業績仍維持穩定成長。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   <span class="slider-text-history__year">2019</span>
-                  <span class="slider-text-history__content"
+                  <span class="slider-text-history__content" data-i18n-html="history2014.item3"
                     >成功打入韓國手機品牌供應鏈，成為安卓系統手機光學指紋辨識演算法的全球市場領導者。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   <span class="slider-text-history__year">2017</span>
-                  <span class="slider-text-history__content"
+                  <span class="slider-text-history__content" data-i18n-html="history2014.item4"
                     >光學指紋辨識演算法於大中華區市場推展，市占率躍升至第二名。</span
                   >
                 </li>
@@ -287,16 +551,41 @@
               </div>
             </div>
             <div class="slider-text-text">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000">2012 ~ 2014</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                2012 ~ 2014
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 Pavoradi (Watson Bell own brand)
               </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">LED燈具自有品牌</h4>
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-html="history2012.title"
+              >
+                LED燈具自有品牌
+              </h4>
               <ul class="slider-text-history">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <span class="slider-text-history__year">2013</span>
-                  <span class="slider-text-history__content"
-                    >自有品牌 Pavoradi 燈具與燈光設計成功進入法國精品 Louis Vuitton (LV) 集團中國市場，完成上海嘉里中心 LV 旗艦店燈光設計專案。</span
+                  <span class="slider-text-history__content" data-i18n-html="history2012.item1"
+                    >自有品牌 Pavoradi 燈具與燈光設計成功進入法國精品 Louis
+                    Vuitton (LV) 集團中國市場，完成上海嘉里中心 LV
+                    旗艦店燈光設計專案。</span
                   >
                 </li>
               </ul>
@@ -316,24 +605,51 @@
               </div>
             </div>
             <div class="slider-text-text">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000">2007 ~ 2009</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                2007 ~ 2009
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 Axiom MicroDevices Inc. (USA)
               </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-html="history2007.title"
+              >
                 全球第一家GSM手機CMOS功率放大器
               </h4>
               <ul class="slider-text-history">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <span class="slider-text-history__year">2009</span>
-                  <span class="slider-text-history__content"
-                    >Axiom 銷售量快速成長，成功取得白牌手機市場功率放大器 20% 市占率，隨後引發競爭對手併購行動。</span
+                  <span class="slider-text-history__content" data-i18n-html="history2007.item1"
+                    >Axiom 銷售量快速成長，成功取得白牌手機市場功率放大器 20%
+                    市占率，隨後引發競爭對手併購行動。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <span class="slider-text-history__year">2007</span>
-                  <span class="slider-text-history__content"
-                    >出首款成功打入中國 GSM 手機市場的 CMOS 功率放大器，開啟技術應用新里程替代GaAS 功率放大器。</span
+                  <span class="slider-text-history__content" data-i18n-html="history2007.item2"
+                    >出首款成功打入中國 GSM 手機市場的 CMOS
+                    功率放大器，開啟技術應用新里程替代GaAS 功率放大器。</span
                   >
                 </li>
               </ul>
@@ -363,18 +679,41 @@
               </div>
             </div>
             <div class="slider-text-text">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">2007 ~ 2009</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+              >
+                2007 ~ 2009
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 Hymite A/S (Denmark)
               </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-html="history20072.title"
+              >
                 高功率 LED 微積電 (MEMS) 封裝技術之世界先驅
               </h4>
               <ul class="slider-text-history">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <span class="slider-text-history__year">2009</span>
-                  <span class="slider-text-history__content"
-                    >成功協助 Hymite 以高價將其所有專利出售予全球知名半導體製造商，協助原廠完成策略性轉型。</span
+                  <span class="slider-text-history__content" data-i18n-html="history20072.item1"
+                    >成功協助 Hymite
+                    以高價將其所有專利出售予全球知名半導體製造商，協助原廠完成策略性轉型。</span
                   >
                 </li>
               </ul>
@@ -405,38 +744,78 @@
             </div>
             <div class="slider-text-text">
               <div class="slider-text-text__head">
-              <h2 class="slider-text-text__time" data-aos="fade-up" data-aos-duration="1000">1999 ~ 2012</h2>
-              <h3 class="slider-text-text__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                Samsung SDI Co., Ltd. 
-(South Korea)
-              </h3>
-              <h4 class="slider-text-text__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                鋰電池
-              </h4>
+                <h2
+                  class="slider-text-text__time"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  1999 ~ 2012
+                </h2>
+                <h3
+                  class="slider-text-text__title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  Samsung SDI Co., Ltd. (South Korea)
+                </h3>
+                <h4
+                  class="slider-text-text__subtitle"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  data-i18n-html="history1999.title"
+                >
+                  鋰電池
+                </h4>
               </div>
               <ul class="slider-text-history">
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <span class="slider-text-history__year">2009</span>
-                  <span class="slider-text-history__content"
-                    >在全球金融危機期間，持續維持穩定的出貨表現，不僅協助 SDI 穩健渡過市場低潮，更奠定其全球市場領導地位。</span
+                  <span class="slider-text-history__content" data-i18n-html="history1999.item1"
+                    >在全球金融危機期間，持續維持穩定的出貨表現，不僅協助 SDI
+                    穩健渡過市場低潮，更奠定其全球市場領導地位。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <span class="slider-text-history__year">2008</span>
-                  <span class="slider-text-history__content"
-                    >在金融海嘯前精準預判市場走勢，協助 SDI 以預售方式提前鎖定 2009 年大量客戶訂單，創造創紀錄的營業額，達美金 4.6 億元。</span
+                  <span class="slider-text-history__content"  data-i18n-html="history1999.item2"
+                    >在金融海嘯前精準預判市場走勢，協助 SDI 以預售方式提前鎖定
+                    2009 年大量客戶訂單，創造創紀錄的營業額，達美金 4.6
+                    億元。</span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   <span class="slider-text-history__year">2004</span>
-                  <span class="slider-text-history__content"
-                    >創下銷售新紀錄，負責銷售 <strong>Samsung SDI 超過 70% 的產量，奠定長期穩定合作基礎。</strong></span
+                  <span class="slider-text-history__content"  data-i18n-html="history1999.item3"
+                    >創下銷售新紀錄，負責銷售
+                    <strong
+                      >Samsung SDI 超過 70%
+                      的產量，奠定長期穩定合作基礎。</strong
+                    ></span
                   >
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
                   <span class="slider-text-history__year">2000</span>
-                  <span class="slider-text-history__content"
-                    ><strong>成功銷售 Samsung SDI 生產的首顆鋰電池</strong>，開啟雙方合作新篇章。</span
+                  <span class="slider-text-history__content" data-i18n-html="history1999.item4"
+                    ><strong>成功銷售 Samsung SDI 生產的首顆鋰電池</strong
+                    >，開啟雙方合作新篇章。</span
                   >
                 </li>
               </ul>
@@ -449,35 +828,105 @@
         <div class="container">
           <div class="contact__inner">
             <form action="" class="contact__form">
-              <h2 class="contact__title" data-aos="fade-up" data-aos-duration="1000">聯絡我們</h2>
-              <p class="contact__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">需要諮詢或更多資訊，歡迎與我們聯繫。</p>
-              <input type="text" class="contact__input" placeholder="姓名" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" />
-              <input type="number" class="contact__input" placeholder="電話" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" />
+              <h2
+                class="contact__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-i18n="contact.title"
+              >
+                聯絡我們
+              </h2>
+              <p
+                class="contact__text"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-i18n="contact.description"
+              >
+                需要諮詢或更多資訊，歡迎與我們聯繫。
+              </p>
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="姓名"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n-placeholder="contact.form.name"
+              />
+              <input
+                type="number"
+                class="contact__input"
+                placeholder="電話"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-i18n-placeholder="contact.form.phone"
+              />
               <input
                 type="email"
                 class="contact__input"
-                placeholder="電子信箱" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+                placeholder="電子信箱"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                data-i18n-placeholder="contact.form.email"
               />
               <textarea
                 name=""
                 id=""
                 placeholder="留言"
-                class="contact__input" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
+                class="contact__input"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-i18n-placeholder="contact.form.message"
               ></textarea>
-              <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">送出</button>
+              <button
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+                data-i18n="contact.btn"
+              >
+                送出
+              </button>
             </form>
             <div class="contact__info">
-              <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="700"
+              >
                 <i class="bi bi-telephone"></i>
-                <p>電話: <a href="tel:+886-2-8227-8050">+886-2-8227-8050</a></p>
+                <p data-i18n-html="contact.phone">電話: <a href="tel:+886-2-8227-8050">+886-2-8227-8050</a></p>
               </li>
-              <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 <i class="bi bi-envelope"></i>
-                <p>Email信箱: <a href="mailto:service@watsonbell.com">service@watsonbell.com</a></p>
+                <p data-i18n-html="contact.email">
+                  Email信箱:
+                  <a href="mailto:service@watsonbell.com"
+                    >service@watsonbell.com</a
+                  >
+                </p>
               </li>
-              <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="900"
+              >
                 <i class="bi bi-geo-alt"></i>
-                <p>地址: <a href="https://maps.app.goo.gl/eHEc93JHjsmm1scBA" target="_blank">新北市中和區連城路268號13樓之4</a></p>
+                <p data-i18n-html="contact.address">
+                  地址:
+                  <a
+                    href="https://maps.app.goo.gl/eHEc93JHjsmm1scBA"
+                    target="_blank"
+                    >新北市中和區連城路268號13樓之4</a
+                  >
+                </p>
               </li>
             </div>
           </div>
@@ -493,5 +942,181 @@
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/index.js"></script>
+
+    <script>
+      (() => {
+        const DEFAULT_LANG = "zh-TW";
+        const STORAGE_KEY = "site_lang";
+        const SUPPORTED = new Set(["zh-TW", "zh-CN", "en"]);
+
+        let dictCache = {}; // { "zh-TW": {...}, "zh-CN": {...} }
+        let currentLang = DEFAULT_LANG;
+
+        // 取得深層 key： e.g. getByPath(obj, "banner.title")
+        function getByPath(obj, path) {
+          return path
+            .split(".")
+            .reduce(
+              (acc, k) => (acc && acc[k] != null ? acc[k] : undefined),
+              obj
+            );
+        }
+
+        async function loadDict(lang) {
+          // 已載入就直接用
+          if (dictCache[lang]) return dictCache[lang];
+
+          // 你目前只有 zh-TW / zh-CN，en 先做 fallback
+          // 如果未來你有 i18n/en.json，把這段改成直接 fetch en.json 就好
+          if (lang === "en") {
+            // 先嘗試載入 en.json（若不存在就 fallback）
+            try {
+              const res = await fetch(`./i18n/en.json`, { cache: "no-store" });
+              if (!res.ok) throw new Error("en.json not found");
+              const data = await res.json();
+              dictCache[lang] = data;
+              return data;
+            } catch (e) {
+              // fallback 到繁中
+              lang = "zh-TW";
+              if (dictCache[lang]) return dictCache[lang];
+            }
+          }
+
+          const res = await fetch(`./i18n/${lang}.json`, { cache: "no-store" });
+          if (!res.ok) throw new Error(`Failed to load i18n/${lang}.json`);
+          const data = await res.json();
+          dictCache[lang] = data;
+          return data;
+        }
+
+        function applyTranslations(dict) {
+          // 純文字
+          document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            const val = getByPath(dict, key);
+            if (val == null) return; // 找不到 key 就跳過
+            el.textContent = String(val);
+          });
+
+          // 支援 HTML（例如 <br/>）
+          document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+            const key = el.getAttribute("data-i18n-html");
+            const val = getByPath(dict, key);
+            if (val == null) return;
+            el.innerHTML = String(val);
+          });
+
+          // 更新語系按鈕顯示（你按鈕內的 p 有 data-i18n="lang.currentLabel" 的話其實也會被更新）
+          // 這段只是額外保險：如果你沒加 data-i18n 也能顯示正確語系名稱
+          const activeLabel = document.querySelector(".header-lang-active p");
+          if (activeLabel) {
+            const labelMap = {
+              "zh-TW": "繁體中文",
+              "zh-CN": "简体中文",
+              en: "English",
+            };
+            activeLabel.textContent =
+              getByPath(dict, "lang.currentLabel") ??
+              labelMap[currentLang] ??
+              currentLang;
+          }
+
+          // 更新下拉選單 active 樣式
+          document
+            .querySelectorAll(".header-lang-list a[data-lang]")
+            .forEach((a) => {
+              a.classList.toggle("active", a.dataset.lang === currentLang);
+            });
+
+          document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+  const key = el.dataset.i18nPlaceholder;
+  const val = key.split(".").reduce((o, k) => o?.[k], dict);
+  if (val != null) {
+    el.setAttribute("placeholder", String(val));
+  }
+});
+
+          // 也可同步 html lang 屬性（SEO/可讀性）
+          document.documentElement.setAttribute("lang", currentLang);
+        }
+
+        function applyI18nList(dict) {
+          document.querySelectorAll("[data-i18n-list]").forEach((ul) => {
+            const key = ul.dataset.i18nList;
+            const list = key.split(".").reduce((o, k) => o?.[k], dict);
+
+            if (!Array.isArray(list)) return;
+
+            ul.innerHTML = "";
+            list.forEach((text) => {
+              const li = document.createElement("li");
+              li.textContent = text;
+              ul.appendChild(li);
+            });
+          });
+        }
+
+        async function setLang(lang) {
+          if (!SUPPORTED.has(lang)) lang = DEFAULT_LANG;
+
+          currentLang = lang;
+          localStorage.setItem(STORAGE_KEY, currentLang);
+
+          const dict = await loadDict(currentLang);
+          applyTranslations(dict);
+          applyI18nList(dict);
+        }
+
+        function bindLangUI() {
+          // 下拉語系點擊
+          document
+            .querySelectorAll(".header-lang-list a[data-lang]")
+            .forEach((a) => {
+              a.addEventListener("click", async (e) => {
+                e.preventDefault();
+                const lang = a.dataset.lang;
+                try {
+                  await setLang(lang);
+                } catch (err) {
+                  console.error(err);
+                  // 載入失敗時 fallback
+                  await setLang(DEFAULT_LANG);
+                }
+              });
+            });
+
+          // （可選）簡單的展開/收合（你若已經有自己的 UI 控制可以刪掉）
+          const btn = document.querySelector(".header-lang-active");
+          const list = document.querySelector(".header-lang-list");
+          if (btn && list) {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              list.classList.toggle("is-open");
+            });
+            document.addEventListener("click", (e) => {
+              if (!e.target.closest(".header__lang"))
+                list.classList.remove("is-open");
+            });
+          }
+        }
+
+        async function initI18n() {
+          bindLangUI();
+          const saved = localStorage.getItem(STORAGE_KEY);
+          const startLang =
+            saved && SUPPORTED.has(saved) ? saved : DEFAULT_LANG;
+
+          try {
+            await setLang(startLang);
+          } catch (err) {
+            console.error(err);
+            await setLang(DEFAULT_LANG);
+          }
+        }
+
+        document.addEventListener("DOMContentLoaded", initI18n);
+      })();
+    </script>
   </body>
 </html>
