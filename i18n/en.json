@@ -1,12 +1,94 @@
 {
   "lang": {
-    "currentLabel": "繁體中文",
-    "zhTW": "繁體中文",
-    "zhCN": "简体中文",
-    "en": "English"
+    "currentLabel": "English",
+    "zhTW": "繁<span>體</span>中<span>文</span>",
+    "zhCN": "简<span>体</span>中<span>文</span>",
+    "en": "En<span>glish</span>"
   },
   "banner": {
-    "title": "Always go the extra mile",
-    "description": "Always go the extra mile"
-  }
+    "title": "ALWAYS GO THE EXTRA MILE",
+    "description": "We are dedicated to promoting innovative technologies and products, <br>and supporting global partners in expanding into the Greater China market."
+  },
+  "expertise": {
+    "title": "Our Industry And Expertise",
+    "description": "We are deeply engaged in the semiconductor, information technology, and mobile device industries, providing business development and professional sales services for high-tech products."
+  },
+    "who": {
+        "description": "We are dedicated to driving innovation through advanced technologies and products, helping global partners expand into the Greater China market. With extensive consulting experience and strong local insight, we support our partners in accurately positioning their businesses, strengthening competitiveness, and together achieving both growth and long-term vision. Driven by results, we continuously invest and refine our services to ensure our partners and clients succeed in an ever-changing market.  Through their trust and accomplishments, we have built lasting and reliable partnerships.",
+        "title": "Our Philosophy",
+        "principle": "Principle",
+        "principle1": "Sincerity",
+        "principle2": "Responsible",
+        "principle3": "Diligence",
+        "action": "Execution",
+        "action1": "Build Trust",
+        "action2": "Attentive Service",
+        "action3": "Reaching Target"
+    },
+    "vision": {
+        "title": "Vision",
+        "list": [
+            "Empowering our represented product to become a top-three market leader.",
+            "Focus on deep engagement within strategic supply chains and high-value niche markets."
+        ]
+    },
+    "mission": {
+        "title": "Mission",
+        "list": [
+            "To create value for our clients and let our partners’ brands shine."
+        ]
+    },
+    "history2025_1": {
+        "title": "",
+        "item1": "<strong>Glory Zenith Group specializes in diamond heat sink technology. Leveraging autonomous core patents and precision processing capabilities, we provide highly efficient and reliable thermal management solutions for 5G communications, optical networks, advanced chipsets, and high-power electronic devices, helping cutting-edge technologies overcome thermal bottlenecks.</strong>",
+        "item2": "As the power density of lasers and semiconductors continues to rise, thermal management has become the critical pain point limiting performance and reliability. With traditional materials reaching their physical limits, diamond—boasting exceptional thermal conductivity (>2000 W/m·K)——emerges as the ultimate solution to the “thermal barrier.“ Glory Zenith Group focuses on diamond growth and application technologies. Through three milestone technical breakthroughs, we are driving the transition of diamond heat sinks from the laboratory to large-scale industrial application, providing a stable and powerful “cooling core“ for high-power electronic systems.",
+        "item3": "By achieving breakthroughs in “Large-size Synthesis,“ “High-orientation High-speed Growth,“ and “Core Patent Technologies,“ Glory Zenith Group directly addresses the challenges of industrializing diamond heat sinks. We have established a complete process ranging from material growth to component fabrication. Beyond providing industry-leading diamond materials, we are committed to delivering mass-producible, deployable, and highly reliable integrated thermal solutions, positioning ourselves as a key partner in thermal management for high-power electronics and advanced semiconductors."
+    },
+    "history2025_2": {
+        "title": "One of the most used static code analyzers in the world.",
+        "item1": "<strong>Cppcheck Premium</strong> is a static code analysis tool developed by <strong>Cppcheck Solutions AB</strong>, a Swedish company specializing in software quality assurance for <strong>C and C++</strong>.",
+        "item2": "<strong>Advanced Analysis & Compliance</strong> — Designed to deliver high-level code inspections, certification support, and compliance with industry standards.",
+        "item3": "<strong>Trusted by Developers Worldwide</strong> — Cppcheck is highly respected within the global C/C++ development community. Its open-source version is widely praised for efficient and precise error detection, while the paid <strong>Premium</strong> edition further provides enterprise-grade features and professional technical support."
+    },
+    "history2014": {
+        "title": "Pioneer of fingerprint biometrics recognition algorithm",
+        "item1": "Our algorithm has become a core technology trusted by leading smart device brands such as Samsung and Xiaomi, and is also utilized in Xiaomi’s premium smart door lock lineup.",
+        "item2": "Despite the global impact of COVID-19 and a sharp decline in smartphone shipments, our business continued to achieve steady growth.",
+        "item3": "Entered the supply chain of major Korean smartphone brands and became the global market leader in optical fingerprint recognition algorithms for Android devices.",
+        "item4": "Expanded the optical fingerprint recognition algorithm business, achieved second ranking in market share across Greater China."
+    },
+    "history2012": {
+        "title": "Pavoradi (Watson Bell own brand) <br>LED Lamp & lighting design",
+        "item1": "The in-house brand <strong>Pavoradi</strong> successfully entered the China market of the French luxury group <strong>Louis Vuitton (LV)</strong> and completed the lighting design project for the LV flagship store at Kerry Centre, Shanghai."
+    },
+    "history2007": {
+        "title": "Axiom MicroDevices Inc. (USA)<br>World’s first GSM mobile phone CMOS power amplifier",
+        "item1": "Axiom achieved rapid sales growth, capturing 20% market share in the power amplifier segment for white-label mobile phones, leading to its subsequent acquisition by a competitor.",
+        "item2": "Launched the first CMOS power amplifier successfully adopted in the China GSM mobile phone market, marking a key technological milestone of substitution of GaAS amplifier."
+    },
+    "history20072": {
+        "title": "Hymite A/S (Denmark)<br>World’s first Silicon MEMS packaging for high power LED",
+        "item1": "Successfully assisted Hymite in selling all of its patents at a premium to a world-renowned semiconductor manufacturer, enabling the company’s strategic transformation."
+    },
+    "history1999": {
+        "title": "Lithium rechargeable battery",
+        "item1": "Maintained stable shipment performance throughout the global financial crisis, enabling SDI to navigate the downturn successfully and solidify its position as a global market leader.",
+        "item2": "Accurately anticipated the global financial crisis and helped SDI secure substantial 2009 customer orders through advance sales, generating a record-breaking revenue of USD 460 million.",
+        "item3": "Achieved a new sales milestone by handling over 70% of Samsung SDI’s total production, establishing a foundation for long-term partnership.",
+        "item4": "Successfully sold Samsung SDI’s first lithium battery, marking the beginning of a lasting collaboration."
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "Welcome to contact us for more information or any inquiry.",
+        "form": {
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "message": "Message"
+        },
+        "btn": "Submit",
+        "phone": "Phone: <a href='tel:+886-2-8227-8050'>+886-2-8227-8050</a>",
+        "email": "Email:<a href='mailto:service@watsonbell.com'>service@watsonbell.com</a>",
+        "address": "Address:<a href='https://maps.app.goo.gl/eHEc93JHjsmm1scBA' target='_blank'>13F.-4, No. 268, Liancheng Rd., Zhonghe Dist., New Taipei City 235, Taiwan</a>"
+    }
 }

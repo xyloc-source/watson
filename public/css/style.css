@@ -381,6 +381,12 @@ ul {
   .expertise {
     padding: 48px 24px;
   }
+  .expertise__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .icons-text {
@@ -672,6 +678,9 @@ ul {
             transform: none;
     text-align: left;
   }
+  .bg-text__title span.mission {
+    color: #be8500;
+  }
   .bg-text__content {
     z-index: 1;
     position: relative;
@@ -842,6 +851,11 @@ ul {
   line-height: 1.6;
 }
 
+.slider-text-text__head > div {
+  width: calc(100% - 100px);
+  padding-right: 20px;
+}
+
 .slider-text-history li {
   margin-top: 16px;
   display: -webkit-box;
@@ -863,10 +877,19 @@ ul {
 .slider-text-history__content {
   color: #282828;
   width: calc(100% - 48px);
+  text-align: justify;
+}
+
+.slider-text-history__content.font-sm {
+  font-size: 15px;
 }
 
 .slider-text-history.no-year .slider-text-history__content {
   width: 100%;
+}
+
+.slider-text-history.text-sm span {
+  font-size: 13px;
 }
 
 .slider-text__item:nth-child(even) .slider-text__pic {
@@ -882,6 +905,38 @@ ul {
 
 .slider-text__item:nth-child(even) .slider-text-text * {
   color: #fff;
+}
+
+.slider-text__item.nopic .slider-text-text {
+  width: 100%;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-text__item.nopic .slider-text-text__right {
+  border-left: 1px solid #e4e4e4;
+}
+
+.slider-text__item.nopic .slider-text-text__right li {
+  margin: 0;
+}
+
+.slider-text__item.nopic .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.slider-text__item.nopic .row > div {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.slider-text .wechat {
+  width: 100px;
 }
 
 @media screen and (max-width: 991px) {
@@ -900,6 +955,18 @@ ul {
     width: 100%;
     -webkit-transform: none;
             transform: none;
+  }
+  .slider-text-text__head > div {
+    width: 100%;
+    padding: 0;
+  }
+  .slider-text-text__right {
+    border: 0;
+  }
+  .slider-text-text__right .slider-text-history {
+    border-top: 1px solid #e4e4e4;
+    padding-top: 24px;
+    margin-top: 24px;
   }
   .slider-text__item.text-right {
     -webkit-box-orient: vertical;
@@ -1076,6 +1143,12 @@ ul {
   padding: 18px 24px;
   color: #fff;
   background-color: #282828;
+}
+
+.footer_line {
+  display: block;
+  width: 100px;
+  margin: 0 auto 20px;
 }
 
 .footer p {

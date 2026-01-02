@@ -337,6 +337,9 @@ ul {
     }
     @media screen and (max-width: 991px) {
         padding: 48px 24px;
+        &__inner {
+            flex-direction: column;
+        }
     }
 }
 
@@ -569,6 +572,9 @@ ul {
                     transform: none;
                     text-align: left;
                 }
+            &.mission {
+                color: #be8500;
+            }
             }
         }
         &__content {
@@ -706,6 +712,12 @@ ul {
       font-weight: 500;
       line-height: 1.6;
     }
+    &__head {
+        >div {
+            width: calc(100% - 100px);
+            padding-right: 20px;
+        }
+    }
   }
   &-history {
     li {
@@ -724,10 +736,19 @@ ul {
     &__content {
       color: $text;
       width: calc(100% - 48px);
+      text-align: justify;
+      &.font-sm {
+        font-size: 15px;
+      }
     }
     &.no-year {
         .slider-text-history__content {
             width: 100%;
+        }
+    }
+    &.text-sm {
+        span {
+            font-size: 13px;
         }
     }
   }
@@ -748,6 +769,33 @@ ul {
             }
         }
     }
+    &.nopic {
+        .slider-text {
+            &-text {
+                width: 100%;
+                position: static;
+                transform: none;
+                display: flex;
+            &__right {
+                border-left: 1px solid #e4e4e4;
+                li {
+                    margin: 0;
+                }
+            }
+            }
+        }
+        .row {
+            margin-left: -25px;
+            margin-right: -25px;
+            >div {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+  }
+  .wechat {
+    width: 100px;
   }
   @media screen and (max-width: 991px) {
     background-image: none;
@@ -762,6 +810,20 @@ ul {
         margin-top: 20px;
         width: 100%;
         transform: none;
+        &__head {
+            >div {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        &__right {
+            border: 0;
+            .slider-text-history {
+            border-top: 1px solid #e4e4e4;
+                padding-top: 24px;
+                margin-top: 24px;
+            }
+        }
     }
     &__item {
         &.text-right {
@@ -898,6 +960,11 @@ ul {
     padding: 18px 24px;
     color: $white;
     background-color: $text;
+    &_line {
+        display: block;
+        width: 100px;
+        margin: 0 auto 20px;
+    }
     p {
         margin: 0;
         font-size: 14px;
