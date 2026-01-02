@@ -539,6 +539,9 @@ ul {
   .icons-text {
     padding: 48px 24px;
   }
+  .icons-text__title {
+    font-size: 32px;
+  }
   .icons-text__subtitle {
     margin-bottom: 24px;
   }

@@ -453,6 +453,9 @@ ul {
     }
     @media screen and (max-width: 991px) {
         padding: 48px 24px;
+        &__title {
+            font-size: 32px;
+        }
         &__subtitle {
             margin-bottom: 24px;
         }
