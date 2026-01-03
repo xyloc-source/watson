@@ -15,6 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta
+      property="og:title" data-i18n-meta="og.title"
+      content="大中華區商務開發與銷售顧問｜Watson Bell"
+    />
+    <meta
+      property="og:description" data-i18n-meta="og.description"
+      content="Watson Bell 專注於半導體與科技產業，提供商務開發、銷售策略顧問與市場進入服務，協助企業拓展大中華區市場。"
+    />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/aos/aos.css" />
@@ -362,30 +370,30 @@
               </div>
             </div>
             <div class="slider-text-text">
-                  <h2
-                    class="slider-text-text__time"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    2025 ~ Present
-                  </h2>
-                  <h3
-                    class="slider-text-text__title"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    Lory Zenith Group 
-                  </h3>
-                  <h4
-                    class="slider-text-text__subtitle"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                    data-i18n="history2025_1.title"
-                  >
-                    榮盛晶芯(深圳)半導體器件有限公司
-                  </h4>
+              <h2
+                class="slider-text-text__time"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                2025 ~ Present
+              </h2>
+              <h3
+                class="slider-text-text__title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                Lory Zenith Group
+              </h3>
+              <h4
+                class="slider-text-text__subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-i18n="history2025_1.title"
+              >
+                榮盛晶芯(深圳)半導體器件有限公司
+              </h4>
               <ul class="slider-text-history no-year text-sm">
                 <li
                   data-aos="fade-up"
@@ -395,9 +403,9 @@
                   <span
                     class="slider-text-history__content"
                     data-i18n-html="history2025_1.item1"
-                  ><strong>
-                    榮盛集團深耕金剛石熱沉技術，憑藉自主核心專利與精密加工能力，為 5G 通訊、光通訊、先進晶片與高功率電子設備提供高效、可靠的散熱解決方案，協助尖端科技突破熱管理瓶頸。
-                  </strong></span
+                    ><strong>
+                      榮盛集團深耕金剛石熱沉技術，憑藉自主核心專利與精密加工能力，為 5G 通訊、光通訊、先進晶片與高功率電子設備提供高效、可靠的散熱解決方案，協助尖端科技突破熱管理瓶頸。
+                    </strong></span
                   >
                 </li>
                 <li
@@ -409,9 +417,9 @@
                     class="slider-text-history__content"
                     data-i18n-html="history2025_1.item2"
                   >
-                    隨著雷射與半導體功率密度持續攀升，熱管理已成為制約效能與可靠度的關鍵痛點。當傳統散熱材料逐步逼近物理極限，金剛石以其卓越的導熱性能（>2000 W/m·K），成為突破熱障的理想材料。榮盛集團專注於金剛石生長與應用技術，透過三大里程碑式的技術突破，推動金剛石熱沉從實驗室走向大規模工業化應用，為高功率電子系統注入穩定而強勁的「冷靜」核心。
-</span
-                  >
+                    隨著雷射與半導體功率密度持續攀升，熱管理已成為制約效能與可靠度的關鍵痛點。當傳統散熱材料逐步逼近物理極限，金剛石以其卓越的導熱性能（>2000
+                    W/m·K），成為突破熱障的理想材料。榮盛集團專注於金剛石生長與應用技術，透過三大里程碑式的技術突破，推動金剛石熱沉從實驗室走向大規模工業化應用，為高功率電子系統注入穩定而強勁的「冷靜」核心。
+                  </span>
                 </li>
                 <li
                   data-aos="fade-up"
@@ -1175,6 +1183,14 @@
             const val = key.split(".").reduce((o, k) => o?.[k], dict);
             if (val != null) {
               el.setAttribute("placeholder", String(val));
+            }
+          });
+
+          document.querySelectorAll("meta[data-i18n-meta]").forEach((meta) => {
+            const key = meta.dataset.i18nMeta;
+            const val = key.split(".").reduce((o, k) => o?.[k], dict);
+            if (val != null) {
+              meta.setAttribute("content", String(val));
             }
           });
 
