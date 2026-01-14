@@ -299,13 +299,7 @@ ul {
 }
 
 .expertise {
-    // min-height: 472px;
     padding: 48px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // text-align: center;
     background-color: #fffdf5;
     &__inner {
         display: flex;
@@ -363,7 +357,7 @@ ul {
         top: 0;
         left: 0;
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.6);
     }
     .container {
         padding: 0;
@@ -653,7 +647,7 @@ ul {
     position: relative;
     width: 100%;
     padding-bottom: 75%;
-    > img {
+    > img, >video {
       position: absolute;
       width: 100%;
       height: 100%;

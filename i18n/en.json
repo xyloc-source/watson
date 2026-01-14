@@ -32,21 +32,21 @@
     "vision": {
         "title": "Vision",
         "list": [
-            "Empowering our represented product to become a top-three market leader.",
-            "Focus on deep engagement within strategic supply chains and high-value niche markets."
+            "Empowering our represented product to become a top-three market leader."
         ]
     },
     "mission": {
         "title": "Mission",
         "list": [
+            "We carefully select excellent products and technologies, and deliver the right solutions to the clients who need them most.",
             "To create value for our clients and let our partners’ brands shine."
         ]
     },
     "history2025_1": {
         "title": "",
-        "item1": "<strong>Glory Zenith Group specializes in diamond heat sink technology. Leveraging autonomous core patents and precision processing capabilities, we provide highly efficient and reliable thermal management solutions for 5G communications, optical networks, advanced chipsets, and high-power electronic devices, helping cutting-edge technologies overcome thermal bottlenecks.</strong>",
-        "item2": "As the power density of lasers and semiconductors continues to rise, thermal management has become the critical pain point limiting performance and reliability. With traditional materials reaching their physical limits, diamond—boasting exceptional thermal conductivity (>2000 W/m·K)——emerges as the ultimate solution to the “thermal barrier.“ Glory Zenith Group focuses on diamond growth and application technologies. Through three milestone technical breakthroughs, we are driving the transition of diamond heat sinks from the laboratory to large-scale industrial application, providing a stable and powerful “cooling core“ for high-power electronic systems.",
-        "item3": "By achieving breakthroughs in “Large-size Synthesis,“ “High-orientation High-speed Growth,“ and “Core Patent Technologies,“ Glory Zenith Group directly addresses the challenges of industrializing diamond heat sinks. We have established a complete process ranging from material growth to component fabrication. Beyond providing industry-leading diamond materials, we are committed to delivering mass-producible, deployable, and highly reliable integrated thermal solutions, positioning ourselves as a key partner in thermal management for high-power electronics and advanced semiconductors."
+        "item1": "<strong>Glory Zenith Group specializes in diamond heat sink technology. Leveraging our autonomous core patents and precision manufacturing capabilities, we provide highly efficient and reliable thermal management solutions for 5G communications, optical networks, advanced chipsets, and high-power electronic devices.</strong>",
+        "item2": "In response to the thermal management bottlenecks caused by ever-increasing power densities, we utilize the exceptional thermal conductivity of diamond (>2000 W/m·K) to push cooling materials beyond their traditional physical limits.",
+        "item3": "Through three milestone breakthroughs—“Large-size Synthesis,“ ”High-orientation High-speed Growth,“ and ”Key Proprietary Technologies“—Glory Zenith Group has established a complete mass-production workflow, from material growth to component fabrication. We are driving the transition of diamond heat sinks from laboratory research to industrial application, positioning ourselves as a pivotal partner in thermal management for high-power electronics and advanced semiconductors."
     },
     "history2025_2": {
         "title": "One of the most used static code analyzers in the world.",
