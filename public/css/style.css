@@ -643,10 +643,8 @@ ul {
   height: 6px;
   border-radius: 50%;
   background-color: #282828;
-  top: 50%;
+  top: 11px;
   left: 4px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 @media screen and (max-width: 575px) {
@@ -880,7 +878,6 @@ ul {
 .slider-text-history__content {
   color: #282828;
   width: calc(100% - 48px);
-  text-align: justify;
 }
 
 .slider-text-history__content.font-sm {

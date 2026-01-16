@@ -533,9 +533,8 @@ ul {
                 height: 6px;
                 border-radius: 50%;
                 background-color: $text;
-                top: 50%;
+                top: 11px;
                 left: 4px;
-                transform: translateY(-50%);
             }
         }
     }
@@ -733,7 +732,7 @@ ul {
     &__content {
       color: $text;
       width: calc(100% - 48px);
-      text-align: justify;
+    //   text-align: justify;
       &.font-sm {
         font-size: 15px;
       }
