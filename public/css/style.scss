@@ -514,6 +514,8 @@ ul {
     &__item {
         margin-bottom: 28px;
         padding-left: 8px;
+        width: 370px;
+        margin-left: auto;
     }
     &__subtitle {
         font-size: 24px;
@@ -577,6 +579,9 @@ ul {
             z-index: 1;
             position: relative;
             padding: 0;
+            width: 100%;
+        }
+        &__item {
             width: 100%;
         }
     }

@@ -621,6 +621,8 @@ ul {
 .bg-text__item {
   margin-bottom: 28px;
   padding-left: 8px;
+  width: 370px;
+  margin-left: auto;
 }
 
 .bg-text__subtitle {
@@ -686,6 +688,9 @@ ul {
     z-index: 1;
     position: relative;
     padding: 0;
+    width: 100%;
+  }
+  .bg-text__item {
     width: 100%;
   }
 }
