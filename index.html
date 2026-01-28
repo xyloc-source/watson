@@ -972,7 +972,7 @@
       <div class="contact">
         <div class="container">
           <div class="contact__inner">
-            <form action="" class="contact__form">
+            <form id="contactForm" action="" class="contact__form">
               <h2
                 class="contact__title"
                 data-aos="fade-up"
@@ -993,6 +993,7 @@
               <input
                 type="text"
                 class="contact__input"
+                name="Name"
                 placeholder="姓名"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -1001,6 +1002,7 @@
               />
               <input
                 type="number"
+                name="Phone"
                 class="contact__input"
                 placeholder="電話"
                 data-aos="fade-up"
@@ -1010,6 +1012,7 @@
               />
               <input
                 type="email"
+                name="Email"
                 class="contact__input"
                 placeholder="電子信箱"
                 data-aos="fade-up"
@@ -1018,7 +1021,7 @@
                 data-i18n-placeholder="contact.form.email"
               />
               <textarea
-                name=""
+                name="Message"
                 id=""
                 placeholder="留言"
                 class="contact__input"
@@ -1090,6 +1093,30 @@
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/index.js"></script>
+    
+    <script>
+      const FORM_VIBE = document.getElementById('contactForm');
+      const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyV7Zud0S0dtmQYcAbEBtWmHCs7lNMu8L_6ZM6Pa6mocGCF5Ow6Tozyfxj5Vosev0U_Xg/exec'; 
+
+      FORM_VIBE.addEventListener('submit', async (e) => {
+        e.preventDefault(); 
+        
+        
+        const bodyData = new FormData(FORM_VIBE);
+
+        try {
+          await fetch(ENDPOINT, { 
+            method: 'POST', 
+            body: bodyData,
+            mode: 'no-cors' 
+          });
+        } catch (error) {
+          console.error("出錯了：", error);
+        }
+      });
+    </script>
+
+
 
     <script>
       (() => {
