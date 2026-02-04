@@ -1102,30 +1102,19 @@
       const SUBMIT_BTN = document.getElementById('contactSubmitBtn');
       const SUBMIT_BTN_TEXT = SUBMIT_BTN.textContent.trim();
 
-      FORM_VIBE.addEventListener('submit', async (e) => {
+      FORM_VIBE.addEventListener('submit', (e) => {
         e.preventDefault();
-
-        // 顯示 loading 狀態
-        SUBMIT_BTN.disabled = true;
-        SUBMIT_BTN.innerHTML = '<i class="bi bi-arrow-repeat spin"></i> 傳送中...';
 
         const bodyData = new FormData(FORM_VIBE);
 
-        try {
-          await fetch(ENDPOINT, {
-            method: 'POST',
-            body: bodyData,
-            mode: 'no-cors'
-          });
-          alert("資料已送出！");
-          FORM_VIBE.reset();
-        } catch (error) {
-          console.error("出錯了：", error);
-        } finally {
-          // 恢復按鈕狀態
-          SUBMIT_BTN.disabled = false;
-          SUBMIT_BTN.textContent = SUBMIT_BTN_TEXT;
-        }
+        fetch(ENDPOINT, {
+          method: 'POST',
+          body: bodyData,
+          mode: 'no-cors'
+        });
+
+        alert("資料已送出！");
+        FORM_VIBE.reset();
       });
     </script>
 
