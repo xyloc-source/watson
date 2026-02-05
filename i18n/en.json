@@ -91,6 +91,11 @@
             "message": "Message"
         },
         "btn": "Submit",
+        "loading": "Processing...",
+        "success": "Completed! Thank you for contacting us.",
+        "errorSend": "Submission failed. Please try again later.",
+        "errorEmpty": "Please fill in all fields.",
+        "errorEmail": "Please enter a valid email address.",
         "phone": "Phone: <a href='tel:+886-2-8227-8050'>+886-2-8227-8050</a>",
         "email": "Email:<a href='mailto:service@watsonbell.com'>service@watsonbell.com</a>",
         "address": "Address:<a href='https://maps.app.goo.gl/eHEc93JHjsmm1scBA' target='_blank'>13F.-4, No. 268, Liancheng Rd., Zhonghe Dist., New Taipei City 235, Taiwan</a>"

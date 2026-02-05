@@ -1097,24 +1097,95 @@
     
     <script>
       const FORM_VIBE = document.getElementById('contactForm');
-      const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyzNb8pQPRDlujhgyfimiTWQxh03lBnYOQw99nYQqVMGcecn46vT8sCgklp9c5E3uot7w/exec'; 
+      const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyzNb8pQPRDlujhgyfimiTWQxh03lBnYOQw99nYQqVMGcecn46vT8sCgklp9c5E3uot7w/exec';
 
       const SUBMIT_BTN = document.getElementById('contactSubmitBtn');
       const SUBMIT_BTN_TEXT = SUBMIT_BTN.textContent.trim();
 
-      FORM_VIBE.addEventListener('submit', (e) => {
+      // 取得 i18n 翻譯文字，fallback 到預設中文
+      function t(key, fallback) {
+        if (window.__i18nDict) {
+          const val = key.split('.').reduce((o, k) => o?.[k], window.__i18nDict);
+          if (val != null) return val;
+        }
+        return fallback;
+      }
+
+      function validateForm() {
+        const name = FORM_VIBE.querySelector('[name="Name"]').value.trim();
+        const phone = FORM_VIBE.querySelector('[name="Phone"]').value.trim();
+        const email = FORM_VIBE.querySelector('[name="Email"]').value.trim();
+        const message = FORM_VIBE.querySelector('[name="Message"]').value.trim();
+
+        if (!name || !phone || !email || !message) {
+          showFormMessage(t('contact.errorEmpty', '請填寫所有欄位'), 'error');
+          return false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          showFormMessage(t('contact.errorEmail', '請輸入正確的電子信箱格式'), 'error');
+          return false;
+        }
+
+        return true;
+      }
+
+      function showFormMessage(text, type) {
+        let msgEl = document.getElementById('contactFormMessage');
+        if (!msgEl) {
+          msgEl = document.createElement('div');
+          msgEl.id = 'contactFormMessage';
+          SUBMIT_BTN.parentNode.insertBefore(msgEl, SUBMIT_BTN.nextSibling);
+        }
+        msgEl.textContent = text;
+        msgEl.className = 'contact__message contact__message--' + type;
+        msgEl.style.display = 'block';
+      }
+
+      function hideFormMessage() {
+        const msgEl = document.getElementById('contactFormMessage');
+        if (msgEl) msgEl.style.display = 'none';
+      }
+
+      function setLoading(isLoading) {
+        if (isLoading) {
+          SUBMIT_BTN.disabled = true;
+          SUBMIT_BTN.innerHTML = '<span class="spinner"></span> ' + t('contact.loading', '處理中...');
+          SUBMIT_BTN.classList.add('contact__btn--loading');
+        } else {
+          SUBMIT_BTN.disabled = false;
+          SUBMIT_BTN.innerHTML = SUBMIT_BTN_TEXT;
+          SUBMIT_BTN.classList.remove('contact__btn--loading');
+        }
+      }
+
+      FORM_VIBE.addEventListener('submit', async (e) => {
         e.preventDefault();
+        hideFormMessage();
 
-        const bodyData = new FormData(FORM_VIBE);
+        if (!validateForm()) return;
 
-        fetch(ENDPOINT, {
-          method: 'POST',
-          body: bodyData,
-          mode: 'no-cors'
-        });
+        setLoading(true);
 
-        alert("資料已送出！");
-        FORM_VIBE.reset();
+        try {
+          const bodyData = new FormData(FORM_VIBE);
+
+          await fetch(ENDPOINT, {
+            method: 'POST',
+            body: bodyData,
+            mode: 'no-cors'
+          });
+
+          setLoading(false);
+          showFormMessage(t('contact.success', '處理完畢，感謝您的來信！'), 'success');
+          FORM_VIBE.reset();
+
+          setTimeout(() => { hideFormMessage(); }, 5000);
+        } catch (err) {
+          setLoading(false);
+          showFormMessage(t('contact.errorSend', '送出失敗，請稍後再試。'), 'error');
+        }
       });
     </script>
 
@@ -1251,6 +1322,10 @@
           const dict = await loadDict(currentLang);
           applyTranslations(dict);
           applyI18nList(dict);
+
+          // 暴露給表單 script 使用
+          window.__i18nDict = dict;
+          window.__i18nLang = currentLang;
         }
 
         function bindLangUI() {

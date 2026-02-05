@@ -91,6 +91,11 @@
             "message": "留言"
         },
         "btn": "提交",
+        "loading": "处理中...",
+        "success": "处理完毕，感谢您的来信！",
+        "errorSend": "提交失败，请稍后再试。",
+        "errorEmpty": "请填写所有栏位",
+        "errorEmail": "请输入正确的电子邮箱格式",
         "phone": "电话: <a href='tel:+886-2-8227-8050'>+886-2-8227-8050</a>",
         "email": "Email邮箱:<a href='mailto:service@watsonbell.com'>service@watsonbell.com</a>",
         "address": "地址:<a href='https://maps.app.goo.gl/eHEc93JHjsmm1scBA' target='_blank'>新北市中和区连城路 268 号 13 楼之 4</a>"
